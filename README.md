@@ -29,9 +29,8 @@ El clúster base levanta 5 contenedores (y hasta 18 en su versión completa).
 Se ejecutaron los siguientes comandos para el despliegue:
 1. `git clone https://github.com/mrugankray/Big-Data-Cluster.git`
 2. `cd Big-Data-Cluster`
-3. Se modificó el archivo `basic-hadoop-docker-compose.yaml` para evitar conflictos de puertos.
-4. `docker compose -f basic-hadoop-docker-compose.yaml up -d`
-5. `docker ps` (Se adjunta captura en la carpeta `/evidencias`).
+3. `docker compose -f basic-hadoop-docker-compose.yaml up -d`
+4. `docker ps` (Se adjunta captura en la carpeta `/evidencias`).
 
 Prueba Funcional Obligatoria (Hadoop / HDFS)
 Se ingresó al contenedor maestro (`docker exec -it namenode bash`) y se ejecutó un script para crear un directorio, cargar un archivo de texto local hacia el HDFS y consultar su contenido exitosamente mediante `hdfs dfs -cat`. 
